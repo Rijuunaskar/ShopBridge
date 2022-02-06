@@ -1,0 +1,38 @@
+.table-container{
+    margin:50px 80px;
+}
+
+.input-form{
+    width:100%;
+    border:none;
+    transition:all 0.1s ease;
+    border-bottom:1px solid #28c7fa;
+    color:#1e2a78 ;
+    background:transparent;
+}
+
+.input-form:hover{
+    border-bottom:2px solid #28c7fa;
+}
+
+.input-form:focus{
+    outline: none;
+    border-bottom:0px 0px 2px 0px solid #28c7fa;
+}
+
+.icon-form{
+    color:#1e2a78;
+}
+
+.name-form{
+    margin:10px 0px;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

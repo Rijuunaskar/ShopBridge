@@ -1,0 +1,70 @@
+<div class="container" style="margin-top:70px" >
+    <div class="title-container" >
+        <h4 style="font-weight: 600;">Manage</h4> Inventory
+    </div>
+    <div class="table-container">
+        <div class="card">
+            <div class="card-header" style="display: flex;justify-content:space-between;">
+              <h5 >Product List</h5>
+              <button type="button" 
+              class="btn" (click)="adddata()" style="color:white;font-size:12px;background:#ff304f">
+              Add Products</button>
+            </div>
+
+            <div class="card-body">
+                <div class="mat-elevation-z8 font-14" style="height:250px;overflow-y: scroll">
+                    <table mat-table [dataSource]="dataSource" width="100%" >
+                  
+                      <!-- Position Column -->
+                      <ng-container matColumnDef="name">
+                        <th mat-header-cell *matHeaderCellDef>Name </th>
+                        <td mat-cell *matCellDef="let element" > <mat-icon (click)="deletedata(element.id)" 
+                            class="mr-1" style="cursor: pointer;font-size: 16px;">delete</mat-icon>
+                            <mat-icon (click)="edit(element)" 
+                            class="mr-1" style="cursor: pointer;font-size: 16px;">edit</mat-icon>
+                            {{element.name}}  </td>
+                      </ng-container>
+                  
+                      <!-- Name Column -->
+                      <ng-container matColumnDef="description">
+                        <th mat-header-cell *matHeaderCellDef> Description </th>
+                        <td mat-cell *matCellDef="let element"> {{element.description}} </td>
+                      </ng-container>
+                  
+                      <!-- Weight Column -->
+                      <ng-container matColumnDef="price">
+                        <th mat-header-cell *matHeaderCellDef> Price </th>
+                        <td mat-cell *matCellDef="let element"> {{element.price}} </td>
+                      </ng-container>
+                  
+                      <!-- Symbol Column -->
+                      <ng-container matColumnDef="qty">
+                        <th mat-header-cell *matHeaderCellDef> Quantity </th>
+                        <td mat-cell *matCellDef="let element"> {{element.qty}} </td>
+                      </ng-container>
+                      
+                      <ng-container matColumnDef="InventoryValue">
+                        <th mat-header-cell *matHeaderCellDef> Inventory Value </th>
+                        <td mat-cell *matCellDef="let element"> {{element.Inventoryvalue}} </td>
+                      </ng-container>
+
+                      <ng-container matColumnDef="Location">
+                        <th mat-header-cell *matHeaderCellDef> Location </th>
+                        <td mat-cell *matCellDef="let element"> {{element.Location}} </td>
+                      </ng-container>
+
+                      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                    </table>
+                  
+                    <mat-paginator 
+                        [pageSizeOptions]="[5, 10, 20]"
+                        showFirstLastButtons 
+                        aria-label="Select page of periodic elements">
+                    </mat-paginator>
+                  </div>
+                  
+            </div>
+          </div>
+    </div>
+</div>

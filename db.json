@@ -1,0 +1,85 @@
+{
+  "product": [
+    {
+      "id": 4,
+      "name": "Item1",
+      "description": "Item 1 description",
+      "price": 800,
+      "Inventoryvalue": 4000,
+      "Location": "Slot1",
+      "qty": 5
+    },
+    {
+      "id": 4,
+      "name": "Item1",
+      "description": "Item 1 description",
+      "price": 800,
+      "Inventoryvalue": 4000,
+      "Location": "Slot1",
+      "qty": 5
+    },
+    {
+      "id": 45552,
+      "name": "Product-4718",
+      "description": "Lore 123 Test data",
+      "price": 100,
+      "Inventoryvalue": 3571,
+      "Location": "G3,G4",
+      "qty": 100
+    },
+    {
+      "id": 35212,
+      "name": "Product-981237",
+      "description": "Desc-4683",
+      "price": 901,
+      "Inventoryvalue": 235,
+      "Location": "D3,C4",
+      "qty": 1142
+    },
+    {
+      "id": 32325,
+      "name": "Item:1312",
+      "description": "Test:desc fi op",
+      "price": 320,
+      "Inventoryvalue": 8438,
+      "Location": "G2,H6",
+      "qty": 562
+    },
+    {
+      "id": 39,
+      "name": "Test132",
+      "description": "Top Hg",
+      "price": 1234,
+      "Inventoryvalue": 6774,
+      "Location": "90G",
+      "qty": 6721
+    },
+    {
+      "id": 94352,
+      "name": "Test-1234",
+      "description": "76128",
+      "price": 981247,
+      "Inventoryvalue": 2091,
+      "Location": "2u",
+      "qty": 6124
+    },
+    {
+      "id": 17448,
+      "name": "Test-0913",
+      "description": "Terat",
+      "price": 7812,
+      "Inventoryvalue": 4544,
+      "Location": "G5,H6",
+      "qty": 14190
+    },
+    {
+      "id": 6856,
+      "name": "Product-9173234",
+      "description": "Test Desc-861284",
+      "price": 12364,
+      "Inventoryvalue": 4230,
+      "Location": "G4,F3",
+      "qty": 126431
+    }
+  ]
+}

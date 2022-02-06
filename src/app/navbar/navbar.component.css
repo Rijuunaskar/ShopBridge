@@ -1,0 +1,40 @@
+.example-container {
+    width: 200px;
+    height: 100vh;
+    margin: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: fixed;
+    left: 0;
+    top:60px;
+    z-index: 2;
+}
+    
+ .example-container2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+ } 
+
+.nav:hover{
+    background: #f87d90;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.nav{
+    transition:0.2s ;
+}
+
+
+.activenav{
+    background: #ff304f;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+.route{
+    margin-top:60px;
+    margin-left: 200px;
+}

@@ -1,0 +1,51 @@
+<div class="row" style="justify-content:space-between;">
+    <div class="col" style="color:#1e2a78;font-weight:bold">{{data.title}}</div>
+    <div class="col" style="display: flex;justify-content: end;">
+        <mat-icon class="icon-form" style="cursor: pointer;" (click)="close()">close</mat-icon></div>
+</div>
+<div class="container-fluid dialog font-14"  >
+    <form [formGroup]="AdddataFormGroup" (ngSubmit)="Addproducts()">
+        <div class="name-form">Product name:</div>
+        <div class="row">
+            <div class="col-1"> <mat-icon class="icon-form">badge</mat-icon></div>
+            <div class="col-10">
+                <input type="text" placeholder="Enter name of the product" class="input-form" formControlName="name" [(ngModel)]="data.editdata.name">
+            </div>
+        </div>
+        <div class="name-form">Product Description:</div>
+        <div class="row">
+            <div class="col-1"> <mat-icon class="icon-form">description</mat-icon></div>
+            <div class="col-10">
+                <input type="text" placeholder="Enter Description" class="input-form" formControlName="description" [(ngModel)]="data.editdata.description">
+            </div>
+        </div>
+        <div class="name-form">Product price:</div>
+        <div class="row">
+            <div class="col-1"> <mat-icon class="icon-form">currency_rupee</mat-icon></div>
+            <div class="col-10">
+                <input type="number" placeholder="Enter price" class="input-form" formControlName="price" [(ngModel)]="data.editdata.price">
+            </div>
+        </div>
+        <div class="name-form">Product Location:</div>
+        <div class="row">
+            <div class="col-1"> <mat-icon class="icon-form">share_location</mat-icon></div>
+            <div class="col-10">
+                <input type="text" placeholder="Enter location" class="input-form" formControlName="Location" [(ngModel)]="data.editdata.Location">
+            </div>
+        </div>
+        <div class="name-form">Product quantity:</div>
+        <div class="row" style="margin-bottom: 10px;">
+            <div class="col-1"> <mat-icon class="icon-form">summarize</mat-icon></div>
+            <div class="col-10">
+                <input type="number" placeholder="Enter quantity" class="input-form" formControlName="qty" [(ngModel)]="data.editdata.qty">
+            </div>
+        </div>
+        <div class="row" style="justify-content:space-between">
+            <div clas="col-6"><button type="button" class="btn btn-light" (click)="close()">Cancel</button></div>
+            <div clas="col-6">
+                <button type="submit" class="btn" 
+                style="background:#ff304f;color:white;font-weight:normal"
+                 [disabled]="!AdddataFormGroup.valid">Submit</button></div>
+        </div>
+    </form>
+</div>
